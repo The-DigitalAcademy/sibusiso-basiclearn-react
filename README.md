@@ -1,1 +1,1 @@
-Check [LINK](https://The-DigitalAcademy.github.com/sibusiso-basiclearn-react)
+[LINK](https://the-digitalacademy.github.io/sibusiso-basiclearn-react/)
