@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/sibusiso-basiclearn-react/static/css/main.22c9a633.css",
+    "main.js": "/sibusiso-basiclearn-react/static/js/main.6fbabc8f.js",
+    "static/media/videoSp.mp4": "/sibusiso-basiclearn-react/static/media/videoSp.b02d3824e24367914756.mp4",
+    "index.html": "/sibusiso-basiclearn-react/index.html",
+    "main.22c9a633.css.map": "/sibusiso-basiclearn-react/static/css/main.22c9a633.css.map",
+    "main.6fbabc8f.js.map": "/sibusiso-basiclearn-react/static/js/main.6fbabc8f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.22c9a633.css",
+    "static/js/main.6fbabc8f.js"
+  ]
+}
