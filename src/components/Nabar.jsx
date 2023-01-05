@@ -7,7 +7,9 @@ const Nabar = () => {
       <nav className="navbar navbar-expand-lg bg-dark">
         <div className="container-fluid">
           <Link to={"/"} className="navbar-brand text-white" href="#">SBUDA JEANS</Link>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler">
+            <span className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,7 +31,7 @@ const Nabar = () => {
             </svg>
             </Link>
             <form className="d-flex" role="search">
-              <Link to={"/myaccount"} className="btn btn-1 btn-outline-primary" type="submit">MY Account</Link>
+              <Link to={"/myaccount"} className="btn btn-1 btn-outline-primary" type="submit">My Account</Link>
             </form>
           </div>
         </div>
