@@ -143,7 +143,11 @@ footer .info-policy {
 
 footer .info-social {
   margin-top: 30px;
-  display: flex;
+}
+
+
+footer .info-social .icon {
+  padding: 6px;
 }
 
 .d-flex button {
