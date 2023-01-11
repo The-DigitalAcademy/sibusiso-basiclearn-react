@@ -104,10 +104,15 @@ li:hover {
 }
 
 .card {
-  margin-top: 60px;
+  margin-top: 90px;
   height: 250px;
   width: 250px;
   margin-left: 40px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0s;
 }
 
 .container {
@@ -149,6 +154,11 @@ footer .info-policy {
 
 footer .info-social {
   margin-top: 30px;
+}
+
+footer .info-social svg:hover {
+  transform: scale(1.2);
+  transition: 0s;
 }
 
 
@@ -245,4 +255,9 @@ footer .info-social .icon {
   grid-template-columns: auto auto auto auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  transition: 0s;
 }
