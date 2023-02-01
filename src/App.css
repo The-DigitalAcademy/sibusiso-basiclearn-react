@@ -302,6 +302,7 @@ footer .info-social .icon {
   width: 25px;
   height: 30px;
   text-align: center;
+  cursor: pointer;
 }
 
 

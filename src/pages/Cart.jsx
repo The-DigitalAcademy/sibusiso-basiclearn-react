@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Nabar from '../components/Nabar';
 import Footer from '../components/Footer';
 
 const Cart = () => {
+
+    const [countup, setCountup] = useState(0);
+
     return (
         <>
             <Nabar />
@@ -22,9 +25,9 @@ const Cart = () => {
                     </div>
 
                     <div className='count-symbol'>
-                        <span className='cp'>+</span>
-                        <span>5</span>
-                        <span className='cp'>-</span>
+                        <span className='cp' onClick={() => setCountup(countup + 1)}>+</span>
+                        <span>{countup}</span>
+                        <span className='cp' onClick={() => setCountup(countup - 1)}>-</span>
                     </div>
 
                     {/* <div className="card">
