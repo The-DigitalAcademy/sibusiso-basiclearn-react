@@ -1,18 +1,27 @@
 import React from 'react';
 import Nabar from '../components/Nabar';
 import Footer from '../components/Footer';
+import { useState } from 'react';
 
 const Men = () => {
+
+  const [cartCount, setCartCount] = useState(0);
+
+  function addtoCart() {
+      setCartCount(cartCount + 1);
+      console.log(cartCount)
+  }
+
   return (
     <>
-    <Nabar/>
+    <Nabar dataCart={cartCount} />
     <div className='container'>
       <div className="card">
         <img src="https://img.ltwebstatic.com/images3_pi/2022/08/24/1661306732120c31444dbdfbe42d8d7da4eeb37830_thumbnail_900x.webp" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">LightBlue Denim</h5>
           <p className="card-price">R1499.99</p>
-          <a href="#" className="btn btn-primary">Add To Bag</a>
+          <a href="#" className="btn btn-primary" onClick={addtoCart}>Add To Bag</a>
         </div>
       </div>
 
@@ -21,7 +30,7 @@ const Men = () => {
         <div className="card-body">
           <h5 className="card-title">Dark Denim</h5>
           <p className="card-price">R1599.99</p>
-          <a href="#" className="btn btn-primary">Add To Bag</a>
+          <a href="#" className="btn btn-primary" onClick={addtoCart}>Add To Bag</a>
         </div>
       </div>
 
@@ -30,7 +39,7 @@ const Men = () => {
         <div className="card-body">
           <h5 className="card-title">Lightblue Denim</h5>
           <p className="card-price">R1699.99</p>
-          <a href="#" className="btn btn-primary">Add To Bag</a>
+          <a href="#" className="btn btn-primary" onClick={addtoCart}>Add To Bag</a>
         </div>
       </div>
 
@@ -39,7 +48,7 @@ const Men = () => {
         <div className="card-body">
           <h5 className="card-title">Dark Denim</h5>
           <p className="card-price">R1599.99</p>
-          <a href="#" className="btn btn-primary">Add To Bag</a>
+          <a href="#" className="btn btn-primary" onClick={addtoCart}>Add To Bag</a>
         </div>
       </div>
 
@@ -48,7 +57,7 @@ const Men = () => {
         <div className="card-body">
           <h5 className="card-title">Dark Denim</h5>
           <p className="card-price">R1499.99</p>
-          <a href="#" className="btn btn-primary">Add To Bag</a>
+          <a href="#" className="btn btn-primary" onClick={addtoCart}>Add To Bag</a>
         </div>
       </div>
 
@@ -57,7 +66,7 @@ const Men = () => {
         <div className="card-body">
           <h5 className="card-title">Dark Denim</h5>
           <p className="card-price">R1399.99</p>
-          <a href="#" className="btn btn-primary">Add To Bag</a>
+          <a href="#" className="btn btn-primary" onClick={addtoCart}>Add To Bag</a>
         </div>
       </div>
 
@@ -66,7 +75,7 @@ const Men = () => {
         <div className="card-body">
           <h5 className="card-title">Dark Denim</h5>
           <p className="card-price">R1599.99</p>
-          <a href="#" className="btn btn-primary">Add To Bag</a>
+          <a href="#" className="btn btn-primary" onClick={addtoCart}>Add To Bag</a>
         </div>
       </div>
 
@@ -75,7 +84,7 @@ const Men = () => {
         <div className="card-body">
           <h5 className="card-title">Dark Denim</h5>
           <p className="card-price">R1499.99</p>
-          <a href="#" className="btn btn-primary">Add To Bag</a>
+          <a href="#" className="btn btn-primary" onClick={addtoCart}>Add To Bag</a>
         </div>
       </div>
     </div>

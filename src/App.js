@@ -1,4 +1,3 @@
-import './App.css';
 import Logo from './pages/Logo';
 import Sale from './pages/Sale';
 import Men from './pages/Men';
