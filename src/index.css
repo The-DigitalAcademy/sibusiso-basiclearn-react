@@ -113,6 +113,9 @@ li:hover {
 .card img {
   width: 100%;
 }
+del {
+  color: red;
+}
 footer {
   width: 100%;
   height: 180px;
