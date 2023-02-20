@@ -103,6 +103,13 @@ li:hover {
   margin-top: -30px;
 }
 
+.header {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
 .card img {
   width: 100%;
 }

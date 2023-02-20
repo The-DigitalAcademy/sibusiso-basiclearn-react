@@ -1,4 +1,4 @@
-import Logo from './pages/Logo';
+import Home from './pages/Home';
 import Sale from './pages/Sale';
 import Men from './pages/Men';
 import Women from './pages/Women';
@@ -29,7 +29,7 @@ function App() {
           <HashLoader color={'#1f0ac4'} loading={loading} size={100} className='spinner-HashLoader'/>
           :
           <Routes>
-            <Route path="/" element={<Logo />} />
+            <Route path="/" element={<Home />} />
             <Route path="sale" element={<Sale />} />
             <Route path="/men" element={<Men />} />
             <Route path="/women" element={<Women />} />
