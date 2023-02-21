@@ -1,31 +1,24 @@
-import React, { useState } from 'react';
+import React from "react";
 
+const Card = ({productsImg, title, discountPrice, price, addToCart}) => {
 
-const Card = (props) => {
-  const [countproduct, setCountproduct] = useState(0);
-
-
-  function addtoBag() {
-    setCountproduct( countproduct + 1);
-    console.log(countproduct)
+  const add = () => {
+    addToCart({productsImg, title, discountPrice, price})
   }
 
-
   return (
-    <>
-      <div className='container'>
-        <div className="card">
-          <img src={props.productsImg} className="card-img-top" alt="..." />
-          <div className="card-body">
-            <h5 className="card-title">{props.title}</h5>
-            <p className="card-discountPrice">{props.discountPrice}</p>
-            <p className="card-price">{props.price}</p>
-            <button className="btn btn-primary" onClick={addtoBag}>{props.button}</button>
-          </div>
+    <div className="col-md-3">
+      <div className="card">
+        <img src={productsImg} className="card-image" alt="..." />
+        <div className="card-body text-center">
+          <h5 className="card-title">{title}</h5>
+          <p className="card-discountPrice">{discountPrice}</p>
+          <p className="card-price">R{price}</p>
+          <button className="btn btn-primary" onClick={add}>AddtoCart</button>
         </div>
       </div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Card
+export default Card;
