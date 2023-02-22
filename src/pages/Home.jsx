@@ -13,23 +13,25 @@ const Home = () => {
 
   const addToCart = (product) => {
     setCartData([...cartData, product])
+
+    console.log(product)
   }
 
   return (
     <>
       <Nabar cartData={cartData} />
       <Playvideo />
-      <button className="btn btn-primary">AddtoCart</button>
-
       <div className="header">Our Products</div>
+      
       <div className="container">
         <div className="row">
           {products.map((product, index) => (
             <Card
               key={index}
+              id={product.id}
               productsImg={product.productsImg}
               title={product.title}
-              price={product.price}
+              amount={product.amount}
               addToCart={addToCart}
             />
           ))}

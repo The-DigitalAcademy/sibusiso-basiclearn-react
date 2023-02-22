@@ -1,11 +1,17 @@
 import Nabar from '../components/Nabar';
 import Footer from '../components/Footer';
+import { useState } from 'react';
 
 const Cart = () => {
+    const [cartData, setCartData] = useState([])
+
+    // const addToCart = (product) => {
+    //   setCartData([...cartData, product])
+    // }
 
     return (
         <>
-            <Nabar/>
+            <Nabar cartData={cartData}/>
             <div className='container'>
                 <div className='products-card'>
                     <div className='myshopping'>My Cart</div>

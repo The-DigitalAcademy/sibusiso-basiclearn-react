@@ -1,9 +1,9 @@
 import React from "react";
 
-const Card = ({productsImg, title, discountPrice, price, addToCart}) => {
+const Card = ({id, productsImg, title, discountPrice, amount, addToCart}) => {
 
   const add = () => {
-    addToCart({productsImg, title, discountPrice, price})
+    addToCart({id, productsImg, title, discountPrice, amount})
   }
 
   return (
@@ -13,7 +13,7 @@ const Card = ({productsImg, title, discountPrice, price, addToCart}) => {
         <div className="card-body text-center">
           <h5 className="card-title">{title}</h5>
           <p className="card-discountPrice">{discountPrice}</p>
-          <p className="card-price">R{price}</p>
+          <p className="card-price">R{amount}</p>
           <button className="btn btn-primary" onClick={add}>AddtoCart</button>
         </div>
       </div>
